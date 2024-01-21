@@ -1,6 +1,6 @@
 # Use the official OpenJDK 17.0.9 base image
 #FROM adoptopenjdk:17.0.9-jdk-hotspot
-FROM adoptopenjdk:17.0.9
+FROM adoptopenjdk/openjdk11:alpine-jre
 
 # Refer to Maven build 
 ARG JAR_FILE=target/docker-spring-boot-1.0.jar
