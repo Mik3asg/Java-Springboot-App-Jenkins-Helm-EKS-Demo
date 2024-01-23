@@ -9,8 +9,8 @@ ARG JAR_FILE=target/docker-spring-boot-1.0.jar
 WORKDIR /opt/app
 
 # Copy the JAR file into the container at /opt/app/docker-spring-boot-1.0.jar
-COPY ${JAR_FILE} docker-spring-boot-1.0.jar
+COPY ${JAR_FILE} app.jar 
 
 # Specify the command to run on container start
-CMD ["java", "-jar", "docker-spring-boot-1.0.jar"]
+CMD ["java", "-jar", "app.jar"]
 
